@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/images/logo.png"
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(true)
@@ -12,7 +12,9 @@ function Navbar() {
 	return (
 		<header className="flex justify-between items-center px-16 h-16 bg-white overflow-hidden lg:h-24 lg:px-96">
 			<div>
-				<img src={logo} className="block max-w-28" alt="company logo" />
+				<Link to="/">
+					<img src={logo} className="block max-w-28" alt="company logo" />
+				</Link>
 			</div>
 			<nav className={`fixed right-0 top-0 bg-white w-full h-full transition md:static ${isMenuOpen ? "translate-x-0" : "translate-x-full"} md:translate-x-0`}>
 				<img src={logo} className="block max-w-32 pl-5 pt-5 md:hidden" alt="company logo" />
