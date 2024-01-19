@@ -3,6 +3,7 @@ import manutencaoImg from "../../assets/images/manutencao.jpg"
 import modernizacaoImg from "../../assets/images/modernizacao.jpg"
 import atendimento24Img from "../../assets/images/atendimento-24.jpg"
 import video from "../../assets/images/elevador-video.mp4"
+import logo from "../../assets/images/logo.png"
 import { IoRocketSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
@@ -62,14 +63,19 @@ function Home() {
 					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover"></video>
 				</div>
 			</section>
-			<section className="mt-7 py-16 lg:px-44">
-				<h1 className="text-3xl text-blue font-bold mb-3.5">Quem somos</h1>
-				<p className="text-black text-lg">A Atos é uma empresa que atua na área de manutenção, modernização, consultoria e auditoria técnica em elevadores.
-					Somos uma empresa independente e administrada com seriedade, o que garante nosso compromisso de qualidade e preço, fazendo com que as parcerias por nós mantida
-					sejam longas e duradouras.
-				</p>
+			<section className="py-16 lg:px-44 flex items-center bg-white">
+				<div className="w-1/2">
+					<img src={logo} alt="" />
+				</div>
+				<div className="w-1/2">
+					<h1 className="text-3xl text-blue font-bold mb-3.5 lg:text-4xl">Quem somos</h1>
+					<p className="text-black text-lg">A Atos é uma empresa que atua na área de manutenção, modernização, consultoria e auditoria técnica em elevadores.
+						Somos uma empresa independente e administrada com seriedade, o que garante nosso compromisso de qualidade e preço, fazendo com que as parcerias por nós mantida
+						sejam longas e duradouras.
+					</p>
+				</div>
 			</section>
-			<section className="mt-7 py-16 lg:px-44 bg-blue flex gap-x-60">
+			<section className="py-16 lg:px-44 bg-blue flex gap-x-60">
 				<div>
 					<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
 					<p className="text-lg">Solicite um orçamento entrando em contato com um dos nossos meios de comunicação:</p>
