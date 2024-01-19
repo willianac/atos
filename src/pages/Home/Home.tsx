@@ -8,13 +8,21 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { Button } from "@mui/material";
 
+import { animated, config, useSpring } from "@react-spring/web"
+
 function Home() {
+	const springs = useSpring({
+		from: { opacity: 0 },
+		to: { opacity: 1 },
+		config: config.molasses
+	})
+
 	return (
 		<>
 			<div className="hero pt-44 px-3.5 flex lg:pt-0 lg:px-44 lg:items-center">
 				<section className="lg:w-3/4">
-					<h1 className="text-4xl font-medium lg:text-7xl mb-2">Experiência, Segurança e Seriedade</h1>
-					<p className="text-lg lg:text-3xl">Nossos técnicos são profissionais altamente qualificados que se dispõe para manter e reparar seu equipamento 24 horas por dia.</p>
+					<animated.h1 style={springs} className="text-4xl font-medium lg:text-7xl mb-2">Experiência, Segurança e Seriedade</animated.h1>
+					<animated.p className="text-lg lg:text-3xl" style={springs}>Nossos técnicos são profissionais altamente qualificados que se dispõe para manter e reparar seu equipamento 24 horas por dia.</animated.p>
 				</section>
 			</div>
 			<div className="mt-7 flex flex-col items-center gap-y-8 justify-center lg:flex-row lg:items-start lg:gap-y-0 lg:gap-x-24">
