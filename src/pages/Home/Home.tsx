@@ -51,8 +51,15 @@ function Home() {
 					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover"></video>
 				</div>
 			</section>
-			<section className="mt-7 font-bold lg:px-44">
-				<h1 className="text-3xl text-blue">Quem somos</h1>
+			<section className="mt-7 py-16 lg:px-44">
+				<h1 className="text-3xl text-blue font-bold mb-3.5">Quem somos</h1>
+				<p className="text-black text-lg">A Atos é uma empresa que atua na área de manutenção, modernização, consultoria e auditoria técnica em elevadores.
+					Somos uma empresa independente e administrada com seriedade, o que garante nosso compromisso de qualidade e preço, fazendo com que as parcerias por nós mantida
+					sejam longas e duradouras.
+				</p>
+			</section>
+			<section className="mt-7 py-16 lg:px-44 bg-blue">
+				<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
 			</section>
 		</>
 	)
