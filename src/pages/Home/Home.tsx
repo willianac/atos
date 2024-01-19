@@ -51,6 +51,9 @@ function Home() {
 					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover"></video>
 				</div>
 			</section>
+			<section className="mt-7 font-bold lg:px-44">
+				<h1 className="text-3xl text-blue">Quem somos</h1>
+			</section>
 		</>
 	)
 }

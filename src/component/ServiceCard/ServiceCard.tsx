@@ -14,7 +14,7 @@ function ServiceCard({ actionUrl, body, image, title }: ServiceCardProps) {
       <CardMedia
         sx={{ height: 300 }}
         image={image}
-        title="green iguana"
+        title="elevador"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
