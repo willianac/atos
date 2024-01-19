@@ -4,6 +4,9 @@ import modernizacaoImg from "../../assets/images/modernizacao.jpg"
 import atendimento24Img from "../../assets/images/atendimento-24.jpg"
 import video from "../../assets/images/elevador-video.mp4"
 import { IoRocketSharp } from "react-icons/io5";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { Button } from "@mui/material";
 
 function Home() {
 	return (
@@ -58,8 +61,15 @@ function Home() {
 					sejam longas e duradouras.
 				</p>
 			</section>
-			<section className="mt-7 py-16 lg:px-44 bg-blue">
-				<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
+			<section className="mt-7 py-16 lg:px-44 bg-blue flex gap-x-60">
+				<div>
+					<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
+					<p className="text-lg">Solicite um orçamento entrando em contato com um dos nossos meios de comunicação:</p>
+				</div>
+				<div className="flex flex-col gap-y-4">
+					<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />}>Whatsapp</Button>
+					<Button variant="outlined" color="secondary" size="large" startIcon={<FaEnvelope />} className="w-96">Outros meios</Button>
+				</div>
 			</section>
 		</>
 	)
