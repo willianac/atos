@@ -19,7 +19,18 @@ export const router = createBrowserRouter([
 			},
 			{
 				path: "/servicos",
-				element: <Services />
+				element: <Services />,
+				// children: [
+				// 	{
+				// 		path: "/manutencao"
+				// 	},
+				// 	{
+				// 		path: "/modernizacao"
+				// 	},
+				// 	{
+				// 		path: "/atendimento-chamados"
+				// 	}
+				// ]
 			}
 		]
 	},

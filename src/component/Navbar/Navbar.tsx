@@ -10,7 +10,7 @@ function Navbar() {
 	}
 
 	return (
-		<header className="flex justify-between items-center px-16 h-16 bg-white overflow-hidden lg:h-24 lg:px-96">
+		<header className="flex justify-between items-center px-16 h-16 bg-white overflow-hidden lg:h-24 lg:px-96 relative shadow-md shadow-black/15">
 			<div>
 				<Link to="/">
 					<img src={logo} className="block max-w-28" alt="company logo" />
