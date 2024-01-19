@@ -2,6 +2,8 @@ import ServiceCard from "../../component/ServiceCard/ServiceCard";
 import manutencaoImg from "../../assets/images/manutencao.jpg"
 import modernizacaoImg from "../../assets/images/modernizacao.jpg"
 import atendimento24Img from "../../assets/images/atendimento-24.jpg"
+import video from "../../assets/images/elevador-video.mp4"
+import { IoRocketSharp } from "react-icons/io5";
 
 function Home() {
 	return (
@@ -12,7 +14,7 @@ function Home() {
 					<p className="text-lg lg:text-3xl">Nossos técnicos são profissionais altamente qualificados que se dispõe para manter e reparar seu equipamento 24 horas por dia.</p>
 				</section>
 			</div>
-			<div className="mt-7 grid grid-cols-1 justify-items-center gap-y-8 lg:grid-cols-3">
+			<div className="mt-7 flex flex-col items-center gap-y-8 justify-center lg:flex-row lg:items-start lg:gap-y-0 lg:gap-x-24">
 				<ServiceCard 
 					title="Manutenção preventiva e corretiva" 
 					image={manutencaoImg}
@@ -32,6 +34,23 @@ function Home() {
 					body="Nossa equipe altamente treinada está pronta para responder rapidamente a chamados, garantindo assistência imediata em situações críticas. " 
 				/>
 			</div>
+			<section className="py-16 bg-orange mt-7 px-3.5 lg:px-44 flex items-center">
+				<div className="w-1/2">
+					<div className="flex items-center gap-3">
+						<h1 className="text-3xl font-bold mb-3.5 lg:text-4xl">Missão</h1>
+						<IoRocketSharp 	className="text-3xl relative bottom-1.5"/>
+					</div>
+					<p className="text-lg">
+						Nossa missão é atender com qualidade, sempre priorizando a segurança, tanto de nossos colaboradores quanto dos usuários dos elevadores, por nós mantidos.
+						Por isso, a Atos Elevadores conta com uma equipe formada por profissionais altamente qualificados e experientes, que vão além dos padrões mais elevados
+						de qualidade na manutenção de equipamentos de transporte vertical, cumprindo com todas as determinações exigidas pelo segmento e mantendo os elevadores
+						dentro de sua originalidade.
+					</p>
+				</div>
+				<div className="pl-44">
+					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover"></video>
+				</div>
+			</section>
 		</>
 	)
 }
