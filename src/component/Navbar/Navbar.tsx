@@ -32,7 +32,7 @@ function Navbar() {
 					</li>
 					<li className="hover:text-orange transition duration-150">
 						<NavLink 
-							to="/servicos"
+							to="/todos-servicos"
 							className={({ isActive }) => [
 								isActive ? "text-orange": ""
 							].join(" ")

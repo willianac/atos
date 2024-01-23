@@ -1,6 +1,10 @@
 function Services() {
 	return (
-		<div>SERVICES</div>
+		<>
+			<section>
+			
+			</section>
+		</>
 	)
 }
 

@@ -3,6 +3,9 @@ import Contact from "./pages/Contact/Contact";
 import Services from "./pages/Services/Services";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home/Home";
+import Maintence from "./pages/Services/Maintenance/Maintenance";
+import Modernization from "./pages/Services/Modernization/Modernization";
+import CallHandling from "./pages/Services/CallHandling/CallHandling";
 
 export const router = createBrowserRouter([
 	{
@@ -14,23 +17,24 @@ export const router = createBrowserRouter([
 				element: <Home />
 			},
 			{
-				path: "/contato",
+				path: "contato",
 				element: <Contact />
 			},
 			{
-				path: "/servicos",
+				path: "todos-servicos",
 				element: <Services />,
-				// children: [
-				// 	{
-				// 		path: "/manutencao"
-				// 	},
-				// 	{
-				// 		path: "/modernizacao"
-				// 	},
-				// 	{
-				// 		path: "/atendimento-chamados"
-				// 	}
-				// ]
+			},
+			{
+				path: "services/manutencao",
+				element: <Maintence />
+			},
+			{
+				path: "services/modernizacao",
+				element: <Modernization />
+			},
+			{
+				path: "services/atendimento-chamados",
+				element: <CallHandling />
 			}
 		]
 	},
