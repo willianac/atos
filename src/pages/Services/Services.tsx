@@ -46,12 +46,12 @@ type SectionBlockProps = {
 
 const Section = ({ title, body, background, image, reverseRow }: SectionBlockProps) => (
   <section className={`px-3.5 py-8 bg-zinc-100 lg:px-72 ${background}`}>
-    <h1 className="text-4xl text-zinc-800 font-bold mb-2.5 text-center">{title}</h1>
+    <h1 className="text-3xl text-zinc-800 font-bold mb-2.5 text-center lg:text-4xl">{title}</h1>
     <div className={`flex items-center flex-col justify-center ${reverseRow ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
-      <div className="">
-        <img src={image} alt="manutencao em um elevador" className="w-[300px] h-[300px] max-w-none"/>
+      <div className="mb-5">
+        <img src={image} alt="manutencao em um elevador" className="h-96 w-96 object-cover  lg:w-[300px] lg:h-[300px] lg:max-w-none"/>
       </div> 
-      <div className="px-10">
+      <div className="lg:px-10">
         <p className="text-xl text-zinc-800 mb-4">
           {body}
         </p>

@@ -10,7 +10,7 @@ function Navbar() {
 	}
 
 	return (
-		<header className="flex justify-between items-center px-16 h-16 bg-white overflow-hidden lg:h-24 lg:px-96 relative shadow-md shadow-black/15">
+		<header className="flex justify-between items-center px-8 h-16 bg-white overflow-hidden lg:h-24 lg:px-96 relative shadow-md shadow-black/15">
 			<div>
 				<Link to="/">
 					<img src={logo} className="block max-w-28" alt="company logo" />
@@ -22,6 +22,7 @@ function Navbar() {
 				<ul className="text-blue flex flex-col px-5 pt-11 gap-y-2 text-xl font-medium md:p-0 md:flex-row md:h-full md:items-center md:justify-end md:gap-x-4">
 					<li className="hover:text-orange transition duration-150">
 						<NavLink 
+							onClick={toggleMenu}
 							to="/contato"
 							className={({ isActive }) => [
 								isActive ? "text-orange": ""
@@ -32,6 +33,7 @@ function Navbar() {
 					</li>
 					<li className="hover:text-orange transition duration-150">
 						<NavLink 
+							onClick={toggleMenu}
 							to="/todos-servicos"
 							className={({ isActive }) => [
 								isActive ? "text-orange": ""
