@@ -8,6 +8,8 @@ function Footer() {
 				<div className="flex flex-col">
 					<span className="font-bold text-lg">Contatos</span>
 					<span>(21) 4119-7888</span>
+					<span>(21) 96440-7377</span>
+					<span>(21) 97008-4583</span>
 					<span>atoselevadores@hotmail.com</span>
 					<span>comercial.ats@gmail.com.br</span>
 				</div>
