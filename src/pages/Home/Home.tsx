@@ -30,23 +30,23 @@ function Home() {
 				<ServiceCard 
 					title="Manutenção preventiva e corretiva" 
 					image={manutencaoImg}
-					actionUrl="/contato" 
+					actionUrl="/todos-servicos" 
 					body="A ATOS Elevadores oferece pacotes de manutenção preventiva abrangentes destinados a garantir a segurança e a confiabilidade dos equipamentos de elevação." 
 				/>
 				<ServiceCard 
 					title="Modernização" 
 					image={modernizacaoImg}
-					actionUrl="/contato" 
+					actionUrl="/todos-servicos" 
 					body="Atualize seus elevadores para os padrões mais recentes de segurança e eficiência. Desde elevadores residenciais a arranha-céus, a ATOS é especialista no fornecimento de pacotes personalizados de mondernização de elevadores." 
 				/>
 				<ServiceCard 
 					title="Atendimento de chamados 24h" 
 					image={atendimento24Img}
-					actionUrl="/contato" 
+					actionUrl="/todos-servicos" 
 					body="Nossa equipe altamente treinada está pronta para responder rapidamente a chamados, garantindo assistência imediata em situações críticas. " 
 				/>
 			</div>
-			<section className="py-16 bg-orange mt-7 px-3.5 lg:px-44 flex items-center">
+			<section className="py-16 bg-orange mt-7 px-3.5 lg:px-72 flex items-center">
 				<div className="w-1/2">
 					<div className="flex items-center gap-3">
 						<h1 className="text-3xl font-bold mb-3.5 lg:text-4xl">Missão</h1>
@@ -63,7 +63,7 @@ function Home() {
 					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover"></video>
 				</div>
 			</section>
-			<section className="py-16 lg:px-44 flex items-center bg-white">
+			<section className="py-16 lg:px-72 flex items-center bg-white">
 				<div className="w-1/2">
 					<img src={logo} alt="" />
 				</div>
@@ -75,7 +75,7 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="py-16 lg:px-44 bg-blue flex gap-x-60">
+			<section className="py-16 lg:px-72 bg-blue flex gap-x-60">
 				<div>
 					<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
 					<p className="text-lg">Solicite um orçamento entrando em contato com um dos nossos meios de comunicação:</p>
