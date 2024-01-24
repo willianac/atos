@@ -28,7 +28,9 @@ function Contact() {
 					<span className="text-lg text-zinc-700">Ou nos mande um email em um de nossos endereços:</span>
 				</div>
 				<div className="flex flex-col items-center w-full lg:w-auto mt-5">
-					<Button variant="contained" color="success" size="large" className="w-full lg:w-auto" startIcon={<FaWhatsapp />}>Whatsapp</Button>
+					<a href="https://wa.me/5521964407377" target="_blank" rel="noopener noreferrer" className="w-full">
+						<Button variant="contained" color="success" size="large" className="w-full" startIcon={<FaWhatsapp />}>Whatsapp</Button>
+					</a>
 					<span className="text-indigo-600 text-lg hover:underline cursor-pointer mt-4" ref={email1Ref} onClick={() => copyEmail(email1Ref)}>atoselevadores@hotmail.com</span>
 					<span className="text-indigo-600 text-lg hover:underline cursor-pointer" ref={email2Ref} onClick={() => copyEmail(email2Ref)}>comercial.ats@gmail.com.br</span>
 				</div>

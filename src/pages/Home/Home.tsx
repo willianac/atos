@@ -82,7 +82,9 @@ function Home() {
 					<p className="text-lg">Solicite um orçamento entrando em contato com um dos nossos meios de comunicação:</p>
 				</div>
 				<div className="flex flex-col gap-y-4">
-					<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />} className="w-96">Whatsapp</Button>
+					<a href="https://wa.me/5521964407377" target="_blank" rel="noopener noreferrer">
+						<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />} className="w-96">Whatsapp</Button>
+					</a>
 					<Link to="/contato">
 						<Button variant="outlined" color="secondary" size="large" startIcon={<FaEnvelope />} className="w-96">Outros meios</Button>
 					</Link>
