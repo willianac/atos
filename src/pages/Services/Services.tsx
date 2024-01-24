@@ -2,6 +2,9 @@ import manutencaoImg from "../../assets/images/manutencao.jpg"
 import modernizacaoImg from "../../assets/images/modernizacao.jpg"
 import atendimento24Img from "../../assets/images/atendimento-24.jpg"
 import { useTrail, animated, config } from "@react-spring/web"
+import { Button } from "@mui/material"
+import { LuArrowRight } from "react-icons/lu";
+import { Link } from "react-router-dom"
 
 const blocks = [
 	{
@@ -23,11 +26,10 @@ const blocks = [
 		reverseRow: true
 	},
 	{
-		title: "Modernização",
-		body: `Atualize seus elevadores para os padrões mais recentes de segurança, eficiência e tecnologia. 
-					Nossa modernização de elevadores inclui a instalação de sistemas avançados de controle, 
-					componentes mais eficientes e aprimoramentos estéticos, proporcionando uma experiência de 
-					transporte vertical mais segura e confortável.`,
+		title: "Atendimento 24h",
+		body: `Estamos disponíveis 24 horas por dia para atender suas emergências. Nossa equipe altamente treinada está pronta para 
+					responder rapidamente a chamados, garantindo assistência imediata em situações críticas. Conte conosco para suporte contínuo, 
+					garantindo a tranquilidade e a continuidade de suas operações a qualquer momento.`,
 		background: "bg-zinc-100",
 		image: atendimento24Img,
 		reverseRow: false
@@ -47,12 +49,15 @@ const Section = ({ title, body, background, image, reverseRow }: SectionBlockPro
     <h1 className="text-4xl text-zinc-800 font-bold mb-2.5 text-center">{title}</h1>
     <div className={`flex items-center flex-col justify-center ${reverseRow ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
       <div className="">
-        <img src={image} alt="manutencao em um elevador" className="w-[300px] max-w-none"/>
+        <img src={image} alt="manutencao em um elevador" className="w-[300px] h-[300px] max-w-none"/>
       </div> 
       <div className="px-10">
-        <p className="text-xl text-zinc-800">
+        <p className="text-xl text-zinc-800 mb-4">
           {body}
         </p>
+				<Link to="/contato">
+					<Button variant="contained" endIcon={<LuArrowRight className="animate-pulse"/>}>Entre em contato</Button>
+				</Link>
       </div>
     </div>
   </section>
