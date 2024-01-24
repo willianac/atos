@@ -10,6 +10,7 @@ import { FaEnvelope } from "react-icons/fa";
 import { Button } from "@mui/material";
 
 import { animated, config, useSpring } from "@react-spring/web"
+import { Link } from "react-router-dom";
 
 function Home() {
 	const springs = useSpring({
@@ -46,28 +47,28 @@ function Home() {
 					body="Nossa equipe altamente treinada está pronta para responder rapidamente a chamados, garantindo assistência imediata em situações críticas. " 
 				/>
 			</div>
-			<section className="py-16 bg-orange mt-7 px-3.5 lg:px-72 flex items-center">
-				<div className="w-1/2">
+			<section className="py-10 bg-orange mt-7 px-3.5 flex flex-col lg:py-16 lg:items-center lg:flex-row lg:px-72">
+				<div className="lg:w-1/2">
 					<div className="flex items-center gap-3">
 						<h1 className="text-3xl font-bold mb-3.5 lg:text-4xl">Missão</h1>
 						<IoRocketSharp 	className="text-3xl relative bottom-1.5"/>
 					</div>
-					<p className="text-lg">
+					<p className="mb-5 text-lg lg:m-0">
 						Nossa missão é atender com qualidade, sempre priorizando a segurança, tanto de nossos colaboradores quanto dos usuários dos elevadores, por nós mantidos.
 						Por isso, a Atos Elevadores conta com uma equipe formada por profissionais altamente qualificados e experientes, que vão além dos padrões mais elevados
 						de qualidade na manutenção de equipamentos de transporte vertical, cumprindo com todas as determinações exigidas pelo segmento e mantendo os elevadores
 						dentro de sua originalidade.
 					</p>
 				</div>
-				<div className="pl-44">
+				<div className="lg:pl-44">
 					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover"></video>
 				</div>
 			</section>
-			<section className="py-16 lg:px-72 flex items-center bg-white">
-				<div className="w-1/2">
-					<img src={logo} alt="" />
+			<section className="py-10 px-3.5 flex flex-col bg-white lg:px-72 lg:py-16 lg:flex-row lg:items-center">
+				<div className="mb-7 lg:m-0 lg:w-1/2">
+					<img src={logo} alt="logo da empresa" className="w-64 block mx-auto lg:w-auto lg:m-0"/>
 				</div>
-				<div className="w-1/2">
+				<div className="lg:w-1/2">
 					<h1 className="text-3xl text-blue font-bold mb-3.5 lg:text-4xl">Quem somos</h1>
 					<p className="text-black text-lg">A Atos é uma empresa que atua na área de manutenção, modernização, consultoria e auditoria técnica em elevadores.
 						Somos uma empresa independente e administrada com seriedade, o que garante nosso compromisso de qualidade e preço, fazendo com que as parcerias por nós mantida
@@ -75,14 +76,16 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="py-16 lg:px-72 bg-blue flex gap-x-60">
-				<div>
+			<section className="py-10 px-3.5 bg-blue flex flex-col gap-x-60 lg:py-16 lg:px-72 lg:flex-row">
+				<div className="mb-8 lg:m-0">
 					<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
 					<p className="text-lg">Solicite um orçamento entrando em contato com um dos nossos meios de comunicação:</p>
 				</div>
 				<div className="flex flex-col gap-y-4">
-					<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />}>Whatsapp</Button>
-					<Button variant="outlined" color="secondary" size="large" startIcon={<FaEnvelope />} className="w-96">Outros meios</Button>
+					<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />} className="w-96">Whatsapp</Button>
+					<Link to="/contato">
+						<Button variant="outlined" color="secondary" size="large" startIcon={<FaEnvelope />} className="w-96">Outros meios</Button>
+					</Link>
 				</div>
 			</section>
 		</>
