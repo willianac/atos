@@ -22,13 +22,13 @@ function Contact() {
 
 	return (
 		<>
-			<section className="py-16 bg-zinc-200 lg:px-64 flex justify-between items-center">
+			<section className="py-8 px-3.5 bg-zinc-200 flex flex-col justify-between items-center lg:py-16 lg:flex-row lg:px-64">
 				<div>
-					<h1 className="text-zinc-700 text-5xl font-bold">Entre em contato conosco</h1>
-					<span className="text-xl text-zinc-700">Ou nos mande um email em um de nossos endereços:</span>
+					<h1 className="text-zinc-700 text-3xl font-bold lg:text-4xl">Entre em contato conosco</h1>
+					<span className="text-lg text-zinc-700">Ou nos mande um email em um de nossos endereços:</span>
 				</div>
-				<div className="flex flex-col">
-					<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />}>Whatsapp</Button>
+				<div className="flex flex-col items-center w-full lg:w-auto mt-5">
+					<Button variant="contained" color="success" size="large" className="w-full lg:w-auto" startIcon={<FaWhatsapp />}>Whatsapp</Button>
 					<span className="text-indigo-600 text-lg hover:underline cursor-pointer mt-4" ref={email1Ref} onClick={() => copyEmail(email1Ref)}>atoselevadores@hotmail.com</span>
 					<span className="text-indigo-600 text-lg hover:underline cursor-pointer" ref={email2Ref} onClick={() => copyEmail(email2Ref)}>comercial.ats@gmail.com.br</span>
 				</div>
