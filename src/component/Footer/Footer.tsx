@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 function Footer() {
 	return (
 		<footer className="bg-zinc-800 py-10 lg:px-64">
-			<div className="flex gap-96">
+			<div className="flex lg:gap-96">
 				<div className="flex flex-col">
 					<span className="font-bold text-lg">Contatos</span>
 					<span>(21) 4119-7888</span>
