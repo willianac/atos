@@ -83,10 +83,10 @@ function Home() {
 				</div>
 				<div className="flex flex-col gap-y-4">
 					<a href="https://wa.me/5521964407377" target="_blank" rel="noopener noreferrer">
-						<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />} className="w-96">Whatsapp</Button>
+						<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />} className="w-full lg:w-96">Whatsapp</Button>
 					</a>
 					<Link to="/contato">
-						<Button variant="outlined" color="secondary" size="large" startIcon={<FaEnvelope />} className="w-96">Outros meios</Button>
+						<Button variant="outlined" color="secondary" size="large" startIcon={<FaEnvelope />} className="w-full lg:w-96">Outros meios</Button>
 					</Link>
 				</div>
 			</section>
