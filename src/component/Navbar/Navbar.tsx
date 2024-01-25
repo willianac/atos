@@ -5,7 +5,7 @@ import { FaTools } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 
 function Navbar() {
-	const [isMenuOpen, setIsMenuOpen] = useState(true)
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
 
 	const toggleMenu = () => {
 		setIsMenuOpen(prevState => !prevState)
