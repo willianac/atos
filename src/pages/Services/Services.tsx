@@ -5,14 +5,15 @@ import { useTrail, animated, config } from "@react-spring/web"
 import { Button } from "@mui/material"
 import { LuArrowRight } from "react-icons/lu";
 import { Link } from "react-router-dom"
+import Footer from "../../component/Footer/Footer"
 
 const blocks = [
 	{
 		title: "Modernização",
-		body: `Atualize seus elevadores para os padrões mais recentes de segurança, eficiência e tecnologia. 
-					Nossa modernização de elevadores inclui a instalação de sistemas avançados de controle, 
-					componentes mais eficientes e aprimoramentos estéticos, proporcionando uma experiência de 
-					transporte vertical mais segura e confortável.`,
+		body: `Seja a modernização parcial, em fases ou completa com substituição do sistema atual, nós trabalharemos
+					junto com você para planejar seus upgrades para atender aos requisitos de construção e orçamentais.
+					Todos os equipamentos instalados pela Atos não são de nossa propriedade, o que significa que podem ser mantidos
+					por qualquer provedor de manutenção qualificado, agora ou no futuro.`,
 		background: "bg-zinc-100",
 		image: modernizacaoImg,
 		reverseRow: false
@@ -20,7 +21,8 @@ const blocks = [
 	{
 		title: "Manutenção preventiva",
 		body: `Garanta o desempenho contínuo de seus equipamentos e sistemas com nossa manutenção preventiva. 
-					Realizamos inspeções regulares e ajustes para evitar falhas, prolongando a vida útil e minimizando paradas não planejadas.`,
+					Oferecemos serviços de manutenção personalizados sob medida para atender as necessidades
+					específicas tanto do seu prédio, estabelecimento comercial, escritório ou residência.`,
 		background: "bg-zinc-300",
 		image: manutencaoImg,
 		reverseRow: true
@@ -78,6 +80,7 @@ function Services() {
 					<Section {...blocks[index]}/>
 				</animated.section>
 			))}
+			<Footer />
 		</>
 	)
 }

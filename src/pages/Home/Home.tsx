@@ -11,6 +11,7 @@ import { Button } from "@mui/material";
 
 import { animated, config, useSpring } from "@react-spring/web"
 import { Link } from "react-router-dom";
+import Footer from "../../component/Footer/Footer";
 
 function Home() {
 	const springs = useSpring({
@@ -90,6 +91,7 @@ function Home() {
 					</Link>
 				</div>
 			</section>
+			<Footer />
 		</>
 	)
 }

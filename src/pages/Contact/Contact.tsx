@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert"
 import { useSpring, animated, config } from "@react-spring/web";
+import Footer from "../../component/Footer/Footer";
 
 function Contact() {
 	const [open, setOpen] = useState(false)
@@ -39,7 +40,7 @@ function Contact() {
 					<h1 className="text-zinc-700 text-3xl font-bold lg:text-4xl">Entre em contato conosco</h1>
 					<span className="text-lg text-zinc-700">Ou nos mande um email em um de nossos endereços:</span>
 				</div>
-				<div className="flex w-full lg:w-auto">
+				<div className="flex justify-center w-full mt-4 lg:w-auto lg:m-0">
 					<a href="https://wa.me/5521964407377" target="_blank" rel="noopener noreferrer" className="w-full md:w-96">
 						<Button variant="contained" color="success" size="large" className="w-full" startIcon={<FaWhatsapp />}>Whatsapp</Button>
 					</a>
@@ -61,6 +62,9 @@ function Contact() {
 					</div>
 				</animated.div>	
 			</section>
+			<div className="lg:fixed lg:bottom-0 lg:w-full">
+				<Footer />
+			</div>
 			<Snackbar 
 				open={open}
 				autoHideDuration={3000}
