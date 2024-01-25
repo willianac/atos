@@ -47,7 +47,7 @@ function Home() {
 					body="Nossa equipe altamente treinada está pronta para responder rapidamente a chamados, garantindo assistência imediata em situações críticas. " 
 				/>
 			</div>
-			<section className="py-10 bg-orange mt-7 px-3.5 flex flex-col lg:py-16 lg:items-center lg:flex-row lg:px-72">
+			<section className="py-10 bg-orange mt-7 px-3.5 flex flex-col md:px-32 lg:py-16 lg:items-center lg:flex-row xl:px-72">
 				<div className="lg:w-1/2">
 					<div className="flex items-center gap-3">
 						<h1 className="text-3xl font-bold mb-3.5 lg:text-4xl">Missão</h1>
@@ -61,12 +61,12 @@ function Home() {
 					</p>
 				</div>
 				<div className="lg:pl-44">
-					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover"></video>
+					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover mx-auto lg:m-0"></video>
 				</div>
 			</section>
-			<section className="py-10 px-3.5 flex flex-col bg-white lg:px-72 lg:py-16 lg:flex-row lg:items-center">
+			<section className="py-10 px-3.5 flex flex-col bg-white md:px-32 xl:px-72 lg:py-16 lg:flex-row lg:items-center">
 				<div className="mb-7 lg:m-0 lg:w-1/2">
-					<img src={logo} alt="logo da empresa" className="w-64 block mx-auto lg:w-auto lg:m-0"/>
+					<img src={logo} alt="logo da empresa" className="w-64 block mx-auto md:w-96 xl:w-auto lg:m-0"/>
 				</div>
 				<div className="lg:w-1/2">
 					<h1 className="text-3xl text-blue font-bold mb-3.5 lg:text-4xl">Quem somos</h1>
@@ -76,7 +76,7 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="py-10 px-3.5 bg-blue flex flex-col gap-x-60 lg:py-16 lg:px-72 lg:flex-row">
+			<section className="py-10 px-3.5 bg-blue flex flex-col md:gap-x-20 xl:gap-x-60 md:px-32 lg:py-16 xl:px-72 lg:flex-row">
 				<div className="mb-8 lg:m-0">
 					<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
 					<p className="text-lg">Solicite um orçamento entrando em contato com um dos nossos meios de comunicação:</p>
