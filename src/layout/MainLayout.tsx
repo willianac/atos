@@ -6,7 +6,7 @@ function MainLayout() {
 		<>
 			<div className="min-h-full">
 				<Navbar />
-				<main>
+				<main className="pt-16 lg:pt-24">
 					<Outlet />
 				</main>
 			</div>
