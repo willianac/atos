@@ -101,12 +101,12 @@ function Home() {
 				</div>
 			</section>
 			<section className="py-10 px-3.5 md:px-20 lg:py-16 xl:px-72">
-			<div className="flex justify-center items-center gap-3">
-				<h1 className="text-zinc-800 text-center font-bold text-3xl">Nossos parceiros</h1>
-				<FaHandshake className="text-3xl text-zinc-800"/>
-			</div>
+				<div className="flex justify-center items-center gap-3">
+					<h1 className="text-zinc-800 text-center font-bold text-3xl">Nossos parceiros</h1>
+					<FaHandshake className="text-3xl text-zinc-800"/>
+				</div>
 				<p className="text-zinc-600 text-center text-lg">Parceiros que confiam no nosso trabalho.</p>
-				<div className="bg-white p-10 shadow-md mt-9 shadow-black/25 rounded-2xl flex justify-between">
+				<div className="bg-white flex flex-col items-center p-6 gap-y-5 shadow-md mt-9 shadow-black/25 rounded-2xl justify-between md:flex-row lg:p-10">
 					<img src={intercontinentalLogo} alt="logo de uma empresa" className="w-36" />
 					<img src={segmedicLogo} alt="logo de uma empresa" className="w-36" />
 					<img src={widicareLogo} alt="logo de uma empresa" className="w-20" />
