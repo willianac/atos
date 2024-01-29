@@ -1,12 +1,18 @@
 import ServiceCard from "../../component/ServiceCard/ServiceCard";
-import manutencaoImg from "../../assets/images/manutencao.jpg"
-import modernizacaoImg from "../../assets/images/modernizacao.jpg"
-import atendimento24Img from "../../assets/images/atendimento-24.jpg"
+import manutencaoImg from "../../assets/images/manutencao.jpg";
+import modernizacaoImg from "../../assets/images/modernizacao.jpg";
+import atendimento24Img from "../../assets/images/atendimento-24.jpg";
+import intercontinentalLogo from "../../assets/images/intercontinental-logo.png";
+import widicareLogo from "../../assets/images/widicare-logo.png";
+import segmedicLogo from "../../assets/images/segmedic-logo.png";
 import video from "../../assets/images/elevador-video.mp4"
 import logo from "../../assets/images/logo.png"
+
 import { IoRocketSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa6";
 import { Button } from "@mui/material";
 
 import { animated, config, useSpring } from "@react-spring/web"
@@ -51,7 +57,7 @@ function Home() {
 			<section className="py-10 bg-orange mt-7 px-3.5 flex flex-col md:px-20 lg:py-16 lg:items-center lg:flex-row xl:px-72">
 				<div className="lg:w-1/2">
 					<div className="flex items-center gap-3">
-						<h1 className="text-3xl font-bold mb-3.5 lg:text-4xl">Missão</h1>
+						<h1 className="text-3xl font-bold mb-3.5">Missão</h1>
 						<IoRocketSharp 	className="text-3xl relative bottom-1.5"/>
 					</div>
 					<p className="mb-5 text-lg lg:m-0">
@@ -70,7 +76,10 @@ function Home() {
 					<img src={logo} alt="logo da empresa" className="w-64 block mx-auto md:w-80 xl:w-96 lg:m-0"/>
 				</div>
 				<div className="lg:w-1/2">
-					<h1 className="text-3xl text-blue font-bold mb-3.5 lg:text-4xl">Quem somos</h1>
+					<div className="flex items-center gap-3">
+						<h1 className="text-3xl text-blue font-bold mb-3.5">Quem somos</h1>
+						<FaUsers className="text-3xl text-blue relative bottom-1"/>
+					</div>
 					<p className="text-black text-lg">A Atos é uma empresa que atua na área de manutenção, modernização, consultoria e auditoria técnica em elevadores.
 						Somos uma empresa independente e administrada com seriedade, o que garante nosso compromisso de qualidade e preço, fazendo com que as parcerias por nós mantida
 						sejam longas e duradouras.
@@ -89,6 +98,18 @@ function Home() {
 					<Link to="/contato">
 						<Button variant="outlined" color="secondary" size="large" startIcon={<FaEnvelope />} className="w-full lg:w-96">Outros meios</Button>
 					</Link>
+				</div>
+			</section>
+			<section className="py-10 px-3.5 md:px-20 lg:py-16 xl:px-72">
+			<div className="flex justify-center items-center gap-3">
+				<h1 className="text-zinc-800 text-center font-bold text-3xl">Nossos parceiros</h1>
+				<FaHandshake className="text-3xl text-zinc-800"/>
+			</div>
+				<p className="text-zinc-600 text-center text-lg">Parceiros que confiam no nosso trabalho.</p>
+				<div className="bg-white p-10 shadow-md mt-9 shadow-black/25 rounded-2xl flex justify-between">
+					<img src={intercontinentalLogo} alt="logo de uma empresa" className="w-36" />
+					<img src={segmedicLogo} alt="logo de uma empresa" className="w-36" />
+					<img src={widicareLogo} alt="logo de uma empresa" className="w-20" />
 				</div>
 			</section>
 			<Footer />
