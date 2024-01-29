@@ -35,18 +35,18 @@ function Contact() {
 
 	return (
 		<>
-			<section className="py-8 px-3.5 bg-zinc-200 flex flex-col justify-between items-center md:px-32 lg:py-16 lg:flex-row xl:px-64">
+			<section className="py-8 px-3.5 bg-zinc-200 flex flex-col justify-between items-center md:px-20 lg:py-16 lg:flex-row xl:px-64">
 				<div>
 					<h1 className="text-zinc-700 text-3xl font-bold lg:text-4xl">Entre em contato conosco</h1>
 					<span className="text-lg text-zinc-700">Ou nos mande um email em um de nossos endereços:</span>
 				</div>
 				<div className="flex justify-center w-full mt-4 lg:w-auto lg:m-0">
-					<a href="https://wa.me/5521964407377" target="_blank" rel="noopener noreferrer" className="w-full md:w-96">
+					<a href="https://wa.me/5521970084583" target="_blank" rel="noopener noreferrer" className="w-full md:w-96">
 						<Button variant="contained" color="success" size="large" className="w-full" startIcon={<FaWhatsapp />}>Whatsapp</Button>
 					</a>
 				</div>
 			</section>
-			<section className="flex flex-col justify-between md:px-32 gap-y-4 lg:flex-row xl:px-64 my-4">	
+			<section className="flex flex-col justify-between md:px-20 gap-y-4 lg:flex-row xl:px-64 my-4">	
 				<animated.div style={leftSlideAnimation} className="bg-white rounded-xl w-full p-10 shadow-md shadow-black/10 lg:w-96">
 					<h1 className="text-2xl font-bold text-zinc-800 text-center">Outros telefones</h1>
 					<div className="flex flex-col items-center text-lg text-zinc-800 mt-4">

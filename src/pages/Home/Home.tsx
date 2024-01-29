@@ -28,7 +28,7 @@ function Home() {
 					<animated.p className="text-lg lg:text-3xl" style={springs}>Nossos técnicos são profissionais altamente qualificados que se dispõe para manter e reparar seu equipamento 24 horas por dia.</animated.p>
 				</section>
 			</div>
-			<div className="mt-7 flex flex-col items-center gap-y-8 justify-center lg:flex-row lg:items-start lg:gap-y-0 lg:gap-x-24">
+			<div className="mt-7 flex flex-col items-center gap-y-8 justify-center md:gap-x-4 lg:flex-row lg:items-start lg:gap-y-0 xl:gap-x-24">
 				<ServiceCard 
 					title="Manutenção preventiva e corretiva" 
 					image={manutencaoImg}
@@ -48,7 +48,7 @@ function Home() {
 					body="Nossa equipe altamente treinada está pronta para responder rapidamente a chamados, garantindo assistência imediata em situações críticas. " 
 				/>
 			</div>
-			<section className="py-10 bg-orange mt-7 px-3.5 flex flex-col md:px-32 lg:py-16 lg:items-center lg:flex-row xl:px-72">
+			<section className="py-10 bg-orange mt-7 px-3.5 flex flex-col md:px-20 lg:py-16 lg:items-center lg:flex-row xl:px-72">
 				<div className="lg:w-1/2">
 					<div className="flex items-center gap-3">
 						<h1 className="text-3xl font-bold mb-3.5 lg:text-4xl">Missão</h1>
@@ -65,9 +65,9 @@ function Home() {
 					<video src={video} autoPlay muted loop className="h-96 w-96 object-cover mx-auto lg:m-0"></video>
 				</div>
 			</section>
-			<section className="py-10 px-3.5 flex flex-col bg-white md:px-32 xl:px-72 lg:py-16 lg:flex-row lg:items-center">
+			<section className="py-10 px-3.5 flex flex-col bg-white md:px-20 xl:px-72 lg:py-16 lg:flex-row lg:items-center">
 				<div className="mb-7 lg:m-0 lg:w-1/2">
-					<img src={logo} alt="logo da empresa" className="w-64 block mx-auto md:w-96 xl:w-auto lg:m-0"/>
+					<img src={logo} alt="logo da empresa" className="w-64 block mx-auto md:w-80 xl:w-96 lg:m-0"/>
 				</div>
 				<div className="lg:w-1/2">
 					<h1 className="text-3xl text-blue font-bold mb-3.5 lg:text-4xl">Quem somos</h1>
@@ -77,13 +77,13 @@ function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="py-10 px-3.5 bg-blue flex flex-col md:gap-x-20 xl:gap-x-60 md:px-32 lg:py-16 xl:px-72 lg:flex-row">
+			<section className="py-10 px-3.5 bg-blue flex flex-col md:gap-x-20 xl:gap-x-60 md:px-20 lg:py-16 xl:px-72 lg:flex-row">
 				<div className="mb-8 lg:m-0">
 					<h1 className="text-3xl font-bold mb-3.5">Solicite um orçamento</h1>
 					<p className="text-lg">Solicite um orçamento entrando em contato com um dos nossos meios de comunicação:</p>
 				</div>
 				<div className="flex flex-col gap-y-4">
-					<a href="https://wa.me/5521964407377" target="_blank" rel="noopener noreferrer">
+					<a href="https://wa.me/5521970084583" target="_blank" rel="noopener noreferrer">
 						<Button variant="contained" color="success" size="large" startIcon={<FaWhatsapp />} className="w-full lg:w-96">Whatsapp</Button>
 					</a>
 					<Link to="/contato">

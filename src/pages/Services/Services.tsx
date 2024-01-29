@@ -47,7 +47,7 @@ type SectionBlockProps = {
 }
 
 const Section = ({ title, body, background, image, reverseRow }: SectionBlockProps) => (
-  <section className={`px-3.5 py-8 bg-zinc-100 md:px-32 xl:px-72 ${background}`}>
+  <section className={`px-3.5 py-8 bg-zinc-100 md:px-20 xl:px-72 ${background}`}>
     <h1 className="text-3xl text-zinc-800 font-bold mb-2.5 text-center lg:text-4xl">{title}</h1>
     <div className={`flex items-center flex-col justify-center ${reverseRow ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
       <div className="mb-5">
