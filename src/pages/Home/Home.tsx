@@ -6,6 +6,7 @@ import intercontinentalLogo from "../../assets/images/intercontinental-logo.png"
 import widicareLogo from "../../assets/images/widicare-logo.png";
 import segmedicLogo from "../../assets/images/segmedic-logo.png";
 import video from "../../assets/images/elevador-video.mp4"
+import presentation from "../../assets/presentation.mp4"
 import logo from "../../assets/images/logo.png"
 
 import { IoRocketSharp } from "react-icons/io5";
@@ -85,6 +86,9 @@ function Home() {
 						sejam longas e duradouras.
 					</p>
 				</div>
+			</section>
+			<section className="py-10 px-3.5 flex justify-center bg-white md:px-20 2xl:px-72 lg:py-16 lg:flex-row lg:items-center">
+				<video src={presentation} controls className="w-full h-96 lg:h-auto lg:w-3/4 object-cover lg:m-0"></video>
 			</section>
 			<section className="py-10 px-3.5 bg-blue flex flex-col md:gap-x-20 xl:gap-x-60 md:px-20 lg:py-16 2xl:px-72 lg:flex-row">
 				<div className="mb-8 lg:m-0">
