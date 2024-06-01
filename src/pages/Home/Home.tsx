@@ -5,9 +5,12 @@ import atendimento24Img from "../../assets/images/atendimento-24.jpg";
 import intercontinentalLogo from "../../assets/images/intercontinental-logo.png";
 import widicareLogo from "../../assets/images/widicare-logo.png";
 import segmedicLogo from "../../assets/images/segmedic-logo.png";
-import video from "../../assets/images/elevador-video.mp4"
-import presentation from "../../assets/presentation.mp4"
-import logo from "../../assets/images/logo.png"
+import tresIrmaosLogo from "../../assets/images/3irmaos-logo.png";
+import saoGeraldoLogo from "../../assets/images/sao-geraldo-service-logo.png";
+import medLifeLogo from "../../assets/images/medlife-logo.png";
+import video from "../../assets/images/elevador-video.mp4";
+import presentation from "../../assets/presentation.mp4";
+import logo from "../../assets/images/logo.png";
 
 import { IoRocketSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
@@ -110,10 +113,13 @@ function Home() {
 					<FaHandshake className="text-3xl text-zinc-800"/>
 				</div>
 				<p className="text-zinc-600 text-center text-lg">Parceiros que confiam no nosso trabalho.</p>
-				<div className="bg-white flex flex-col items-center p-6 gap-y-5 shadow-md mt-9 shadow-black/25 rounded-2xl justify-between md:flex-row lg:p-10">
+				<div className="bg-white flex flex-col flex-wrap items-center p-6 gap-y-5 shadow-md mt-9 shadow-black/25 rounded-2xl justify-between md:flex-row lg:p-10">
 					<img src={intercontinentalLogo} alt="logo de uma empresa" className="w-36" />
 					<img src={segmedicLogo} alt="logo de uma empresa" className="w-36" />
 					<img src={widicareLogo} alt="logo de uma empresa" className="w-20" />
+					<img src={tresIrmaosLogo} alt="logo de uma empresa" className="w-36" />
+					<img src={saoGeraldoLogo} alt="logo de uma empresa" className="w-32" />
+					<img src={medLifeLogo} alt="logo de uma empresa" className="w-24" />
 				</div>
 			</section>
 			<Footer />
