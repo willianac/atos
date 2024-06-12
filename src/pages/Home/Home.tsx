@@ -8,6 +8,7 @@ import segmedicLogo from "../../assets/images/segmedic-logo.png";
 import tresIrmaosLogo from "../../assets/images/3irmaos-logo.png";
 import saoGeraldoLogo from "../../assets/images/sao-geraldo-service-logo.png";
 import medLifeLogo from "../../assets/images/medlife-logo.png";
+import mercadoRealLogo from "../../assets/images/mercado-real-logo.jpg"
 import video from "../../assets/images/elevador-video.mp4";
 import presentation from "../../assets/presentation.mp4";
 import logo from "../../assets/images/logo.png";
@@ -120,6 +121,7 @@ function Home() {
 					<img src={tresIrmaosLogo} alt="logo de uma empresa" className="w-36" />
 					<img src={saoGeraldoLogo} alt="logo de uma empresa" className="w-32" />
 					<img src={medLifeLogo} alt="logo de uma empresa" className="w-24" />
+          <img src={mercadoRealLogo} alt="logo de uma empresa" className="w-20 rounded-full" />
 				</div>
 			</section>
 			<Footer />
