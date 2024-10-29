@@ -1,6 +1,9 @@
 import manutencaoImg from "../../assets/images/manutencao.jpg"
 import modernizacaoImg from "../../assets/images/modernizacao.jpg"
 import atendimento24Img from "../../assets/images/atendimento-24.jpg"
+import service1Video from "../../assets/service1.mp4";
+import service2Video from "../../assets/service2.mp4";
+
 import { useTrail, animated, config } from "@react-spring/web"
 import { Button } from "@mui/material"
 import { LuArrowRight } from "react-icons/lu";
@@ -65,6 +68,20 @@ const Section = ({ title, body, background, image, reverseRow }: SectionBlockPro
   </section>
 );
 
+function ServiceVideos() {
+  return (
+      <>
+      <section className="py-8 bg-blue">
+        <h1 className="text-3xl text-zinc-100 font-bold mb-4 text-center lg:text-4xl">Mídias</h1>
+        <div className="flex flex-col items-center gap-y-8 justify-center md:gap-x-4 lg:flex-row lg:items-start lg:gap-y-0 xl:gap-x-24">
+          <video src={service1Video} muted controls className="h-[650px] w-96 mx-auto lg:m-0"></video>
+          <video src={service2Video} muted controls className="h-[650px] mx-auto lg:m-0"></video>
+        </div>
+      </section>
+      </>
+  )
+}
+
 
 function Services() {
 	const trails = useTrail(blocks.length, {
@@ -80,6 +97,7 @@ function Services() {
 					<Section {...blocks[index]}/>
 				</animated.section>
 			))}
+      <ServiceVideos />
 			<Footer />
 		</>
 	)
